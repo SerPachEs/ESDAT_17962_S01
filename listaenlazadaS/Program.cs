@@ -6,3 +6,6 @@ l.AgregaFinal(2);
 l.AgregaFinal(10);
 l.AgregaFinal(20);
 Console.WriteLine(l.VerVagones());
+Console.WriteLine();
+l.EliminarUltimo();
+Console.WriteLine(l.VerVagones());
