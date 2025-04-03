@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -47,6 +48,13 @@ namespace listaenlazadaS
                 tmp.Sig = nuevo;
             }
         }
+
+        public bool ExisteValor(int valos)
+        {
+            return true;
+        }
+
+
         public string VerVagones()
         {
             string listaVag = "";
@@ -57,6 +65,7 @@ namespace listaenlazadaS
             }
             return listaVag;
         }
+      
         public void EliminarUltimo()
 
         {
@@ -82,8 +91,10 @@ namespace listaenlazadaS
             {
                 tmp = tmp.Sig;
             }
-            tmp.Sig = null;
+            tmp.Sig = null;          
 
         }
+        
+
     }
 }
